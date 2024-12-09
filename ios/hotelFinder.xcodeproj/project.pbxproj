@@ -11,10 +11,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		55C7FDFB0E4043A9956608D3 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DCC9C93FD1D48D8AAFBB33B /* Poppins-Regular.ttf */; };
 		7C0D7D7400D4C052C3B06D3B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7ECDD513DA2A8417554E1394 /* libPods-hotelFinder-hotelFinderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E62EA6B8271DFAA40F531DE1 /* libPods-hotelFinder-hotelFinderTests.a */; };
+		8103C151950145A99E5046EC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B34BD0ED347068394173E /* Poppins-SemiBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8FC5B75FE701423CAF5D2FDC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85F9B682ABEF427FA954C204 /* Poppins-Medium.ttf */; };
 		BD650CE2CB42101E147AB048 /* libPods-hotelFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A054DBC7DC581BDB354EC33 /* libPods-hotelFinder.a */; };
+		F5F26B0EE1EF4A15BBE0BA31 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D99EACF51874C99A9F1BD3B /* Poppins-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +43,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hotelFinder/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = hotelFinder/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = hotelFinder/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4A4B34BD0ED347068394173E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		4D99EACF51874C99A9F1BD3B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		6C73C549F71C9AD245381F07 /* Pods-hotelFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotelFinder.release.xcconfig"; path = "Target Support Files/Pods-hotelFinder/Pods-hotelFinder.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = hotelFinder/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85F9B682ABEF427FA954C204 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		8A054DBC7DC581BDB354EC33 /* libPods-hotelFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hotelFinder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCC9C93FD1D48D8AAFBB33B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		BD67D16B5BA7A5776A5D2097 /* Pods-hotelFinder-hotelFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotelFinder-hotelFinderTests.release.xcconfig"; path = "Target Support Files/Pods-hotelFinder-hotelFinderTests/Pods-hotelFinder-hotelFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		E62EA6B8271DFAA40F531DE1 /* libPods-hotelFinder-hotelFinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hotelFinder-hotelFinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -125,6 +133,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				FB5F9734FEB44D20B5760925 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +158,18 @@
 				BD67D16B5BA7A5776A5D2097 /* Pods-hotelFinder-hotelFinderTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB5F9734FEB44D20B5760925 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D99EACF51874C99A9F1BD3B /* Poppins-Bold.ttf */,
+				85F9B682ABEF427FA954C204 /* Poppins-Medium.ttf */,
+				8DCC9C93FD1D48D8AAFBB33B /* Poppins-Regular.ttf */,
+				4A4B34BD0ED347068394173E /* Poppins-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +268,10 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				7C0D7D7400D4C052C3B06D3B /* PrivacyInfo.xcprivacy in Resources */,
+				F5F26B0EE1EF4A15BBE0BA31 /* Poppins-Bold.ttf in Resources */,
+				8FC5B75FE701423CAF5D2FDC /* Poppins-Medium.ttf in Resources */,
+				55C7FDFB0E4043A9956608D3 /* Poppins-Regular.ttf in Resources */,
+				8103C151950145A99E5046EC /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
