@@ -1,6 +1,6 @@
 import Svg, { ClipPath, Defs, G, Path, Rect } from 'react-native-svg';
 
-const Stadium: React.FC = () => {
+const Stadiums: React.FC = () => {
     return (
         <Svg width="22" height="21" viewBox="0 0 22 21" fill="none">
             <G clipPath="url(#clip0_21_1801)">
@@ -22,4 +22,4 @@ const Stadium: React.FC = () => {
     )
 }
 
-export default Stadium;
+export default Stadiums;

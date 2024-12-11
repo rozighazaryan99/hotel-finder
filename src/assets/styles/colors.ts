@@ -1,4 +1,6 @@
-export const colors: Colors = {
+import { Colors } from "../../types";
+
+const colors: Colors = {
     primary: {
         ui_05: '#FDEFD9',
         ui_10: '#FCDEB3',
@@ -24,30 +26,4 @@ export const colors: Colors = {
     },
 };
 
-type Colors = {
-    primary: {
-        ui_05: string;
-        ui_10: string;
-        ui_80: string;
-        ui_100: string;
-        ui_120: string;
-    };
-    secondary: {
-        ui_05: string;
-        ui_10: string;
-        ui_20: string;
-        ui_100: string;
-        ui_140: string;
-    };
-    gray: {
-        ui_00: string;
-        ui_05: string;
-        ui_10: string;
-        ui_20: string;
-        ui_60: string;
-        ui_70: string;
-        ui_100: string;
-    };
-};
-
-export default Colors;
+export default colors;

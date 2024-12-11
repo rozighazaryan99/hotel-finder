@@ -1,26 +1,28 @@
 import { Image, ImageSourcePropType, Text, View } from "react-native";
 import { styles } from "./styles";
-import globalStyles from "../../assets/styles/global-styles";
+import PriceCategory from "../PriceCategory";
+import Button from "../Button";
 import Distance from "../icons/Distance";
 import Star from "../icons/Star";
-import Dollars from "../icons/Dollars";
-import Button from "../Button";
+import typography from "../../assets/styles/typography";
+import globalStyles from "../../assets/styles/global-styles";
 
-type Props = {
+interface Props {
     data: {
-        name: string,
-        imageSrc: ImageSourcePropType,
-        distance: string,
-        rating: number,
+        name: string;
+        image_src: ImageSourcePropType;
+        distance: string;
+        price_category: number;
+        rating: number;
     }
 }
 
-const Hotel: React.FC<Props> = ({ data }) => {
+const HotelCard: React.FC<Props> = ({ data }) => {
     return (
         <View style={styles.hotelBlock}>
             <Image
                 style={styles.hotelBlockImage}
-                source={data.imageSrc}
+                source={data.image_src}
             />
             <View style={styles.hotelBlockInfo}>
                 <View style={globalStyles.fullBetween}>
@@ -39,15 +41,19 @@ const Hotel: React.FC<Props> = ({ data }) => {
                 <View style={globalStyles.fullBetween}>
                     <View>
                         <View style={styles.dollarBlock}>
-                            <Dollars />
+                            <PriceCategory category={data.price_category} />
                         </View>
                         <Image source={require("../../assets/images/booking-logo.png")} />
                     </View>
-                    <Button title="View prices" />
+                    <Button
+                        title='View prices'
+                        url='https://zoftify.com'
+                        typography={{ ...typography.bodyS.semibold }}
+                    />
                 </View>
             </View>
         </View>
     )
 }
 
-export default Hotel;
+export default HotelCard;

@@ -1,15 +1,25 @@
-import { Pressable, Text, ViewStyle } from "react-native";
+import { Linking, Pressable, Text, TextStyle, ViewStyle } from "react-native";
 import { styles } from "./styles";
 
-type Props = {
-    title: string,
-    width?: ViewStyle['width'],
+interface Props {
+    title: string;
+    url?: string;
+    width?: ViewStyle['width'];
+    typography?: TextStyle;
 }
 
-const Button: React.FC<Props> = ({ title, width = 'auto' }) => {
+const Button: React.FC<Props> = ({ title, url, width = 'auto', typography }) => {
+    // functions
+    const handlePress = () => {
+        if (!url) return null;
+
+        Linking.openURL(url)
+            .catch(err => console.error('An error occurred', err));
+    }
+
     return (
-        <Pressable style={[styles.button, { width }]}>
-            <Text style={styles.buttonText}>{title}</Text>
+        <Pressable onPress={handlePress} style={[styles.button, { width }]}>
+            <Text style={[styles.buttonText, typography]}>{title}</Text>
         </Pressable>
     )
 }

@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../assets/styles/colors';
+import colors from '../../assets/styles/colors';
 import typography from '../../assets/styles/typography';
 
 export const styles = StyleSheet.create({
@@ -28,7 +28,6 @@ export const styles = StyleSheet.create({
 
     distanceText: {
         ...typography.bodyS.medium,
-        fontWeight: 500,
         fontFamily: 'Poppins-Medium',
         color: colors.gray.ui_100,
         marginLeft: 4,
@@ -37,7 +36,7 @@ export const styles = StyleSheet.create({
     rating: {
         flexDirection: 'row',
         alignItems: 'center',
-    backgroundColor: colors.primary.ui_05,
+        backgroundColor: colors.primary.ui_05,
         padding: 2,
     },
 
@@ -51,7 +50,6 @@ export const styles = StyleSheet.create({
     hotelBlockInfoTitle: {
         ...typography.bodyM.semibold,
         fontFamily: 'Poppins-SemiBold',
-        fontWeight: 600,
         marginTop: 8,
         marginBottom: 16,
     },
@@ -62,8 +60,8 @@ export const styles = StyleSheet.create({
         width: 48,
         height: 18,
         display: 'flex',
-        alignItems: 'center',
         justifyContent: 'center',
+        paddingHorizontal: 8,
         marginBottom: 10,
     },
 });
