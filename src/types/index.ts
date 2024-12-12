@@ -1,5 +1,6 @@
 import { RouteProp } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { UseQueryOptions } from "@tanstack/react-query";
 import { TextStyle } from "react-native";
 
 export type RootStackParamList = {
@@ -60,3 +61,21 @@ export type Typography = {
     };
     tabBar: TextStyle;
 }
+
+export type Hotel = {
+    distance: string,
+    id: number,
+    image_src: string,
+    name: string,
+    price_category: number,
+    rating: number,
+    overview: string,
+}
+
+export type HotelsResponse = Hotel[];
+
+export type UseHotelsOptions = Omit<UseQueryOptions<HotelsResponse, Error, HotelsResponse>, 'queryKey' | 'queryFn'>;
+
+export type UseHotelOptions = Omit<UseQueryOptions<Hotel, Error, Hotel>, 'queryKey' | 'queryFn'> & {
+    id: number;
+};

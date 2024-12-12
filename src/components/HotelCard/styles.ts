@@ -37,7 +37,9 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: colors.primary.ui_05,
-        padding: 2,
+        paddingVertical: 3,
+        paddingHorizontal: 4,
+        borderRadius: 6,
     },
 
     ratingNumber: {

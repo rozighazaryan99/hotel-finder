@@ -1,4 +1,4 @@
-import { Image, ImageSourcePropType, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import { styles } from "./styles";
 import PriceCategory from "../PriceCategory";
 import Button from "../Button";
@@ -10,7 +10,7 @@ import globalStyles from "../../assets/styles/global-styles";
 interface Props {
     data: {
         name: string;
-        image_src: ImageSourcePropType;
+        image_src: string;
         distance: string;
         price_category: number;
         rating: number;
@@ -22,7 +22,7 @@ const HotelCard: React.FC<Props> = ({ data }) => {
         <View style={styles.hotelBlock}>
             <Image
                 style={styles.hotelBlockImage}
-                source={data.image_src}
+                src={data.image_src}
             />
             <View style={styles.hotelBlockInfo}>
                 <View style={globalStyles.fullBetween}>
