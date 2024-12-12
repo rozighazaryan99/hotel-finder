@@ -17,6 +17,7 @@
 		8103C151950145A99E5046EC /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A4B34BD0ED347068394173E /* Poppins-SemiBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8FC5B75FE701423CAF5D2FDC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85F9B682ABEF427FA954C204 /* Poppins-Medium.ttf */; };
+		B0A177B82D0B46C80059F9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A177B72D0B46C80059F9A9 /* Assets.xcassets */; };
 		BD650CE2CB42101E147AB048 /* libPods-hotelFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A054DBC7DC581BDB354EC33 /* libPods-hotelFinder.a */; };
 		F5F26B0EE1EF4A15BBE0BA31 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D99EACF51874C99A9F1BD3B /* Poppins-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		85F9B682ABEF427FA954C204 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		8A054DBC7DC581BDB354EC33 /* libPods-hotelFinder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hotelFinder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCC9C93FD1D48D8AAFBB33B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		B0A177B72D0B46C80059F9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD67D16B5BA7A5776A5D2097 /* Pods-hotelFinder-hotelFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotelFinder-hotelFinderTests.release.xcconfig"; path = "Target Support Files/Pods-hotelFinder-hotelFinderTests/Pods-hotelFinder-hotelFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		E62EA6B8271DFAA40F531DE1 /* libPods-hotelFinder-hotelFinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hotelFinder-hotelFinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -127,6 +129,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B0A177B72D0B46C80059F9A9 /* Assets.xcassets */,
 				13B07FAE1A68108700A75B9A /* hotelFinder */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* hotelFinderTests */,
@@ -270,6 +273,7 @@
 				F5F26B0EE1EF4A15BBE0BA31 /* Poppins-Bold.ttf in Resources */,
 				8FC5B75FE701423CAF5D2FDC /* Poppins-Medium.ttf in Resources */,
 				55C7FDFB0E4043A9956608D3 /* Poppins-Regular.ttf in Resources */,
+				B0A177B82D0B46C80059F9A9 /* Assets.xcassets in Resources */,
 				8103C151950145A99E5046EC /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,10 +616,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -684,10 +685,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
